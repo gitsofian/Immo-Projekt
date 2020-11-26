@@ -8,26 +8,11 @@ body{
     font-weight: bold;
 }
 #site{
-    width: 80%;
-    height: 100vh;
-    margin: auto;
-    display: grid;
-    grid-template-columns: 4fr 1fr;
-    grid-template-rows: 1fr 4fr 1fr;
-    grid-template-areas: 
-                "header header"
-                "article nav"
-                "footer footer";
-    gap: 7px;
+    background-color: #aaa;
 }
+
 header{
-    background-color: rgb(202,15,15);
-    grid-area: header;
-    display: flex;
-    justify-content: space-around;
-}
-.fl{
-    background-color: yellow;
+    background-color: #ccc;
 }
 
 nav{
@@ -38,31 +23,15 @@ article{
     background-color: rgb(223,158,196);
     grid-area: article;
 }
+section{
+    background-color: #ddd;
+}
 footer{
     background-color: rgb(25,200,78);
     grid-area: footer;
 }
 @media screen and (max-width: 480px){
-    #site{
-        width: 100%;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 4fr 1fr; 
-        grid-template-areas: 
-                    "header"
-                    "nav"
-                    "article"
-                    "footer";
-    }    
 }
 
 @media screen and (min-width:481px) and (max-width: 899px){
-    #site{
-        width: 75%;
-        grid-template-columns: 1fr 2fr;
-        grid-template-rows: 1fr 4fr 1fr;
-        grid-template-areas: 
-                    "header header"
-                    "nav article"
-                    "footer footer";
-    }    
 }
